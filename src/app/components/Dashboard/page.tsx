@@ -63,22 +63,24 @@ const projects = [
 export default function Home() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   
-  const handleChange = (event) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs.sendForm("service_52r1kqm", "template_heev6fc", e.target, "DV5hUwJRhqcgNGWtE")
+  const sendEmail = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    emailjs.sendForm("service_52r1kqm", "template_heev6fc", event.target as HTMLFormElement, "DV5hUwJRhqcgNGWtE")
       .then(() => {
         alert("Message sent successfully!");
-        e.target.reset();
+        (event.target as HTMLFormElement).reset();
+        setFormData({ name: "", email: "", message: "" });
       })
       .catch((error) => {
         console.error("Error sending message:", error);
         alert("Failed to send message. Please try again later.");
       });
-  }
+  };
   return (
     <>
       <Head>
