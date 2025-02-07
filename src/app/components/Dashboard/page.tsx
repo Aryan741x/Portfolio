@@ -12,7 +12,7 @@ const projects = [
     description: "A blog generator.This application leverages the power of MindsDB to generate content based on the topics you provide, making it easier and faster to create engaging blog posts.Also you can Download the Blog Post for FREE.",
     link: "https://github.com/Aryan741x/Ai-Blog.png",
     image: "/images/Ai-Blog.png",
-    tags: ["Wordpress","Elementor","Figma"],
+    tags: ["Flask","MindsDB","Replicate"],
   },
   {
     year: "2024",
@@ -21,7 +21,7 @@ const projects = [
     description: "Role-based access system using OPAL and Rego policies.WorkSpace is a tool that improves workplace efficiency and security by providing managers, senior managers, and employees with customised permissions and seamless task management features.",
     link: "https://github.com/Aryan741x/WorkSpace",
     image: "/images/WorkSpace.png",
-    tags: ["Wordpress","Elementor","Figma"],
+    tags: ["Next.js","ExpressJS","OPAL","Rego","MongoDB"],
   },
   {
     year: "2024",
@@ -30,7 +30,7 @@ const projects = [
     description: "Enhancing Driver Safety with Intelligent Traffic Sign Detection. This application leverages the power of machine learning to detect various traffic signs, providing drivers with essential guidelines and instructions to enhance their driving experience and safety.",
     link: "https://github.com/Aryan741x/SignalSense",
     image: "/images/SignalSense.png",
-    tags: ["Wordpress","Elementor","Figma"],
+    tags: ["Flask","TensorFlow","OpenCV","Roboflow"],
   },
   {
     year: "2023",
@@ -39,7 +39,7 @@ const projects = [
     description: "The Shiny Pokedex is a web application that provides information about shiny versions of Pokemon, including their type and description. Each Pokemon entry includes details such as its name, type, and a brief description. Users can also view a high-resolution image of the shiny Pokemon to get a better visual representation.",
     link: "https://github.com/Aryan741x/Shinydex",
     image: "/images/Pokedex.png",
-    tags: ["Wordpress","Elementor","Figma"],
+    tags: ["CSS","HTML","Figma"],
   },
   {
     year: "2023",
@@ -48,7 +48,7 @@ const projects = [
     description: "InstaMeds diagnose disease on the basis of the Symptoms Provided. It is a web application that helps users diagnose diseases based on the symptoms they provide. Users can enter their symptoms, and the application will provide a list of possible diseases that match those symptoms. Users can then click on a disease to view more information about it, including its causes, symptoms, and treatment options.",
     link: "https://github.com/Aryan741x/InstaMEDS",
     image: "/images/InstaMeds.png",
-    tags: ["Wordpress","Elementor","Figma"],
+    tags: ["ReactJS","Tensorflow","Flask","MongoDB"],
   },
   {
     year: "2022",
@@ -57,7 +57,7 @@ const projects = [
     description: "This project encompasses two main functionalities: recording and processing sound, and melody generation using a genetic algorithm. The first part involves capturing audio, applying auto-tuning, and visualizing Fourier graphs. The second part focuses on generating melodies through a genetic algorithm, providing a diverse set of musical sequences.",
     link: "https://github.com/Aryan741x/Codejam",
     image: "/images/Rhythm.jpeg",
-    tags: ["Wordpress","Elementor","Figma"],
+    tags: ["Python"],
   }
 ];
 export default function Home() {
